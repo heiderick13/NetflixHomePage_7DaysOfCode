@@ -10,16 +10,25 @@ body {
     color: #fefefe;
 }
 
+h4 {
+    color: rgb(192, 192, 192);
+    font-weight: 700;
+}
+
+li {
+    list-style: none;
+}
+
 .banner {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.9) 5%,
             rgba(0, 0, 0, 0.2) 20%,
             rgba(0, 0, 0, 0.2) 80%,
-            rgba(0, 0, 0, 0.8) 100%),
+            rgba(0, 0, 0, 0.95) 100%),
         url(../imagens/banner1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 97vh;
     position: relative;
 }
 
@@ -64,4 +73,23 @@ nav {
     text-decoration: none;
     color: rgba(204, 204, 204, 0.6);
     font-size: 11pt;
+}
+
+.minha-lista {
+    margin: auto;
+}
+
+.fotos {
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;    
+}
+
+.animacao {
+    transition: .3s;
+}
+
+.animacao:hover {
+    scale: 1.1;
+    cursor: pointer;
 }
